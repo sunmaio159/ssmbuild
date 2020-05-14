@@ -1,12 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="DataSourceManagerImpl" format="xml" multifile-model="true">
-    <data-source source="LOCAL" name="ssmbuild" uuid="ea0585d3-6b8b-4769-b50d-c8815d6abf0e">
-      <driver-ref>mysql.8</driver-ref>
+    <data-source source="LOCAL" name="ssmbuild" uuid="eedb3725-5216-4b26-a1fe-76e4c76879ab">
+      <driver-ref>7fefda9a-fef5-4cc9-9d44-44345b2a2d05</driver-ref>
       <synchronize>true</synchronize>
+      <configured-by-url>true</configured-by-url>
       <jdbc-driver>com.mysql.cj.jdbc.Driver</jdbc-driver>
       <jdbc-url>jdbc:mysql://localhost:3306/ssmbuild?serverTimezone=UTC</jdbc-url>
-      <time-zone>Asia/Shanghai</time-zone>
+      <time-zone>UTC</time-zone>
     </data-source>
   </component>
 </project>

@@ -7,8 +7,12 @@ import org.springframework.beans.factory.annotation.Autowired;
 import java.util.List;
 
 public class BookServiceImpl implements BookService{
-    @Autowired
+
     private BookMapper bookMapper;
+
+    public void setBookMapper(BookMapper bookMapper) {
+        this.bookMapper = bookMapper;
+    }
 
     public int addBooks(Books books) {
         return bookMapper.addBooks(books);
