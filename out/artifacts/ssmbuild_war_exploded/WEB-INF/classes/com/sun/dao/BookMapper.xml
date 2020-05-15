@@ -2,21 +2,21 @@
 <!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Config 3.0//EN"
         "http://mybatis.org/schema/mybatis-3-mapper.dtd">
 <mapper namespace="com.sun.dao.BookMapper">
-    <insert id="addBooks" parameterType="Books">
+    <insert id="addBooks" parameterType="com.sun.pojo.Books">
         insert INTO books (bookName,bookCounts,detail)
         VALUES(#{bookName},#{bookCounts},#{detail})
     </insert>
     <delete id="deleteBookById" parameterType="java.lang.Integer">
         delete books where bookID = #{bookID}
     </delete>
-    <update id="update" parameterType="Books">
+    <update id="update" parameterType="com.sun.pojo.Books">
         update books set bookName = #{bookName},bookCounts= #{bookCounts},detail= #{detail} where bookID=#{bookID}
     </update>
-    <select id="queryById" parameterType="int" resultMap="Books">
+    <select id="queryById" parameterType="int" resultType="com.sun.pojo.Books">
         select * from books where bookID=#{bookID}
     </select>
     
-    <select id="queryAllBook" resultMap="Books">
+    <select id="queryAllBook" resultType="com.sun.pojo.Books">
         select * from books
     </select>
 </mapper>
