@@ -7,7 +7,7 @@
         VALUES(#{bookName},#{bookCounts},#{detail})
     </insert>
     <delete id="deleteBookById" parameterType="java.lang.Integer">
-        delete books where bookID = #{bookID}
+        delete from books where bookID = #{bookID}
     </delete>
     <update id="update" parameterType="com.sun.pojo.Books">
         update books set bookName = #{bookName},bookCounts= #{bookCounts},detail= #{detail} where bookID=#{bookID}

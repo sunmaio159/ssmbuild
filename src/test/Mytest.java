@@ -12,5 +12,6 @@ public class Mytest {
         for (Books books : bookServiceImpl.queryAllBook()) {
             System.out.println(books);
         }
+        System.out.println(bookServiceImpl.queryById(1));
     }
 }
